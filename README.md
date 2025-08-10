@@ -25,6 +25,7 @@ PropBot is a full-stack real estate platform that helps users discover, compare,
 - **Authentication**: Secure signup/login with JWT.
 - **Profile Management**: View and update user details.
 - **Saved Properties**: Access and manage your saved homes.
+- **Filter Options**: View and apply all the filters by clicking on the icons place inside the input field of the chatbox
 
 ### 💬 Enlarged Chatbox Layout
 - **Split-Screen Design**: Chatbox is displayed on the **left** side, and property results appear on the **right** side in full-screen view.
