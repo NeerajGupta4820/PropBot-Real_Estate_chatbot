@@ -187,6 +187,10 @@ Travel-app/
 -Saved Properties page 
 <img width="1911" height="917" alt="image" src="https://github.com/user-attachments/assets/48fd3389-2f9b-4e30-a6eb-9e47cf3b3aba" />
 
+-filter options
+<img width="1916" height="865" alt="image" src="https://github.com/user-attachments/assets/3dc3faf4-5ecf-4520-b2ff-1d0aaa7bf302" />
+
+
 ⚠️ Challenges Faced
 While building PropBot, a few significant challenges were encountered:
  -Implementing ChatbotController Logic
