@@ -187,7 +187,14 @@ Travel-app/
 -Saved Properties page 
 <img width="1911" height="917" alt="image" src="https://github.com/user-attachments/assets/48fd3389-2f9b-4e30-a6eb-9e47cf3b3aba" />
 
-
+⚠️ Challenges Faced
+While building PropBot, a few significant challenges were encountered:
+ -Implementing ChatbotController Logic
+   Merging data from three JSON files while keeping the chatbot responses accurate required careful mapping of IDs and properties.
+   Setting boundaries for chatbot conversation flow (e.g., ensuring it only processed relevant inputs and avoided unrelated responses) was tricky and needed multiple refinements in conditional logic.
+ -Enlarged Chatbox Layout Implementation=
+   While switching from a standard chatbox to an enlarged split-screen layout, managing property card rendering in full-width mode required conditional UI rendering and layout adjustments
+   Ensuring that the transition between normal and enlarged views remained smooth without breaking state or property filtering logic was also a challenge.
 
 ---
 ## 📄 License
