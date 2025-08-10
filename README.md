@@ -168,6 +168,25 @@ Travel-app/
 1. Build the project: `npm run build`
 2. Deploy to platforms Vercel 
 
+### Screenshots
+-Home page
+<img width="1918" height="911" alt="image" src="https://github.com/user-attachments/assets/450b7c05-7f54-49ce-8b6b-67360132ca05" />
+
+-Properties section
+<img width="1917" height="918" alt="image" src="https://github.com/user-attachments/assets/d4bfbd43-2b44-445d-b0e9-e5c4907104ba" />
+
+-InLarge Chatbox
+<img width="1919" height="920" alt="image" src="https://github.com/user-attachments/assets/2fa1104b-0f81-480c-8ec8-37d00876fd31" />
+
+-Property Details page
+<img width="1917" height="915" alt="image" src="https://github.com/user-attachments/assets/466efc7a-2d96-4223-bbb8-7b69715e7c7f" />
+
+-Compare Page
+<img width="1919" height="908" alt="image" src="https://github.com/user-attachments/assets/9911bf0f-45bb-4c13-9aa9-05880cd09d15" />
+
+-Saved Properties page 
+<img width="1911" height="917" alt="image" src="https://github.com/user-attachments/assets/48fd3389-2f9b-4e30-a6eb-9e47cf3b3aba" />
+
 
 
 ---
