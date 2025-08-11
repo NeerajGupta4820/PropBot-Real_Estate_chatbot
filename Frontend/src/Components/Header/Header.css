@@ -409,6 +409,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-top: 50px;
   animation: popupIn 0.18s cubic-bezier(.4,1.4,.6,1) both;
 }
 
@@ -785,17 +786,149 @@
       padding: 5px 10px;
     }
   }
-  @media (max-width: 700px) {
-    .chatbot-bubble {
-      font-size: 0.82rem;
-      padding: 8px 10px;
+/* Add these media queries at the end of your CSS file */
+
+@media (max-width: 700px) {
+  .chatbot-search-bar {
+    position: relative;
+    padding-right: 90px; /* Make space for both buttons */
+  }
+  
+  .send-btn, .filter-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+  }
+  
+  .send-btn {
+    right: 12px;
+    background: #408de4;
+  }
+  
+  .filter-btn {
+    right: 56px; 
+    background: #fff;
+    border: 1.5px solid #408de4;
+  }
+  
+  .chatbot-search-bar input {
+    padding-right: 70px;
+  }
+}
+@media (max-width: 400px) {
+  .chatbot-search-bar {
+    padding-right: 85px;
+  }
+  
+  .filter-btn {
+    right: 52px;
+  }
+  
+  .send-btn, .filter-btn {
+    width: 34px;
+    height: 34px;
+  }
+}
+/* Add these media queries to your header.css file */
+
+/* Tablet View (768px - 1024px) */
+@media (max-width: 1024px) {
+  .chatbot-filter-content {
+    max-width: 70vw;
+    min-width: 60vw;
+    padding: 22px 18px 16px 18px;
+  }
+  
+  .chatbot-filter-fields {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .chatbot-filter-fields label {
+    flex: 1 1 100%;
+    min-width: auto;
+  }
+  
+  .amenities-list {
+    gap: 8px 12px;
+  }
+}
+
+/* Mobile View (up to 767px) */
+@media (max-width: 767px) {
+  .chatbot-filter-popup {
+    align-items: flex-end;
+    padding-bottom: 20px;
+  }
+  
+  .chatbot-filter-content {
+    max-width: 95vw;
+    min-width: 90vw;
+    padding: 18px 16px 12px 16px;
+    border-radius: 16px 16px 0 0;
+    animation: slideUp 0.3s ease-out;
+  }
+  
+  .chatbot-filter-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+  
+  .chatbot-filter-fields label {
+    font-size: 0.95rem;
+  }
+  
+  .amenities-list {
+    max-height: 150px;
+    overflow-y: auto;
+    padding-right: 8px;
+    gap: 6px 10px;
+    font-size: 0.9rem;
+  }
+  
+  .filter-actions {
+    position: sticky;
+    bottom: 0;
+    background: white;
+    padding: 10px 0;
+    margin-bottom: -12px;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+  }
+  
+  /* Animation for mobile popup */
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
     }
-    .chatbot-predefined button {
-      font-size: 0.78rem;
-      padding: 4px 8px;
-    }
-    .view-properties-btn{
-      font-size: 0.72rem !important;
+    to {
+      transform: translateY(0);
+      opacity: 1;
     }
   }
+}
+
+/* Very Small Mobile Devices (up to 400px) */
+@media (max-width: 400px) {
+  .chatbot-filter-content {
+    max-width: 98vw;
+    min-width: 95vw;
+    padding: 16px 12px 10px 12px;
+  }
+  
+  .amenities-list {
+    max-height: 120px;
+    font-size: 0.85rem;
+  }
+  
+  .filter-actions button {
+    padding: 6px 14px;
+    font-size: 0.9rem;
+  }
+}
 }
