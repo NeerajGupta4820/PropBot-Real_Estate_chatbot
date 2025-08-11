@@ -25,6 +25,7 @@ PropBot is a full-stack real estate platform that helps users discover, compare,
 - **Authentication**: Secure signup/login with JWT.
 - **Profile Management**: View and update user details.
 - **Saved Properties**: Access and manage your saved homes.
+- **Filter Options**: View and apply all the filters by clicking on the icons place inside the input field of the chatbox
 
 ### 💬 Enlarged Chatbox Layout
 - **Split-Screen Design**: Chatbox is displayed on the **left** side, and property results appear on the **right** side in full-screen view.
@@ -168,7 +169,37 @@ Travel-app/
 1. Build the project: `npm run build`
 2. Deploy to platforms Vercel 
 
+### Screenshots
+-Home page
+<img width="1918" height="911" alt="image" src="https://github.com/user-attachments/assets/450b7c05-7f54-49ce-8b6b-67360132ca05" />
 
+-Properties section
+<img width="1917" height="918" alt="image" src="https://github.com/user-attachments/assets/d4bfbd43-2b44-445d-b0e9-e5c4907104ba" />
+
+-InLarge Chatbox
+<img width="1919" height="920" alt="image" src="https://github.com/user-attachments/assets/2fa1104b-0f81-480c-8ec8-37d00876fd31" />
+
+-Property Details page
+<img width="1917" height="915" alt="image" src="https://github.com/user-attachments/assets/466efc7a-2d96-4223-bbb8-7b69715e7c7f" />
+
+-Compare Page
+<img width="1919" height="908" alt="image" src="https://github.com/user-attachments/assets/9911bf0f-45bb-4c13-9aa9-05880cd09d15" />
+
+-Saved Properties page 
+<img width="1911" height="917" alt="image" src="https://github.com/user-attachments/assets/48fd3389-2f9b-4e30-a6eb-9e47cf3b3aba" />
+
+-filter options
+<img width="1916" height="865" alt="image" src="https://github.com/user-attachments/assets/3dc3faf4-5ecf-4520-b2ff-1d0aaa7bf302" />
+
+
+⚠️ Challenges Faced
+While building PropBot, a few significant challenges were encountered:
+ -Implementing ChatbotController Logic
+   Merging data from three JSON files while keeping the chatbot responses accurate required careful mapping of IDs and properties.
+   Setting boundaries for chatbot conversation flow (e.g., ensuring it only processed relevant inputs and avoided unrelated responses) was tricky and needed multiple refinements in conditional logic.
+ -Enlarged Chatbox Layout Implementation=
+   While switching from a standard chatbox to an enlarged split-screen layout, managing property card rendering in full-width mode required conditional UI rendering and layout adjustments
+   Ensuring that the transition between normal and enlarged views remained smooth without breaking state or property filtering logic was also a challenge.
 
 ---
 ## 📄 License
